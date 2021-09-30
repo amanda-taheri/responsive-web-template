@@ -1,0 +1,25 @@
+.section-icon{
+	background-image: linear-gradient(to right bottom , rgba($color-blue-light , 0.5) , rgba($color-blue-dark , 0.5) ) , url('../img/bb2.jpg');
+	background-size: cover;
+	padding: 20rem 0;
+	background-position: top;
+	transform: skewy(7deg);
+	margin-top: -25rem ;
+	& > *{
+		transform: skewy(-7deg);
+	}
+	
+
+}
+.svg{
+	width: 4.5rem;
+	height: 4.5rem;
+	//background-image: linear-gradient(to right rgba($color-white , 0) 40% , rgba($color-blue-dark , 1) 50%);
+	fill: rgba($color-blue-dark , 1);
+	margin-bottom: 1rem;
+}
+
+.svgr{
+	margin-left: 16rem;
+
+}

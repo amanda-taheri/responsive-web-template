@@ -1,0 +1,56 @@
+.header {
+  background-size: cover;
+  background-position-x: center;
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-blue-light, 0.5),
+      rgba($color-blue-dark, 1)
+    ),
+    url(../img/222.jpg);
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  border-radius: 1rem;
+  border-end-end-radius: 0;
+}
+.section__about {
+  background-color: $color-gray-1;
+  padding: 25rem 0;
+  margin-bottom: 17rem;
+  z-index: -1;
+  margin-top: -20rem;
+}
+.image {
+  height: auto;
+  width: 30rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  box-shadow: 0 4px 40px 1px rgba(1, 1, 1, 0.3);
+  transition: all 0.2s;
+  &:hover {
+    height: 200pxs;
+    transform: scale(1.07);
+    outline: 1rem solid rgba(5, 104, 117, 0.9);
+    outline-offset: 1.5rem;
+    z-index: 100;
+  }
+}
+.col-1-of-2:hover .image:not(:hover) {
+  transform: scale(0.9);
+}
+.image1 {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+}
+.image2 {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  z-index: 22;
+}
+.image3 {
+  position: absolute;
+  top: 15rem;
+  right: 5rem;
+}

@@ -1,0 +1,42 @@
+*, *::after , *::before{
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	padding: 3rem;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+
+	
+}
+$color-blue-light : rgb(22 , 8 , 155);
+$color-blue-dark : rgb(21, 0 , 36);
+$color-white: #fff ;
+$color-black: #000 ;
+$color-gray-1 : #f7f7f7 ;
+$color-gray-dark: #111 ;
+$color-gray : #e0e0e0 ;
+$color-card-1 : #ffb900 ;
+$color-card-2: #ff7730 ;
+$color-card-3 : #7eb56f ;
+$color-card-4 : #28b486 ;
+$color-card-5 : #2998ff ;
+$color-card-6 : #5643fa ;
+$color-gray-2 : #999 ;
+$color-gray-3: #333;
+$color-red : rgb(231 , 0 , 0);
+$color-blue-light-1: rgb(59 , 42 , 211);
+
+@mixin  karim {
+	&::after{    //clearfix
+		
+		content: "";
+		display:block;
+		clear:both;	
+	}
+	
+}

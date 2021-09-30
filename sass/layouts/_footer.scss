@@ -1,0 +1,61 @@
+.footer{
+    background-color: #111;
+    padding: 5rem 0 10rem 0;
+    font-size: 1.3rem;
+    color: $color-grey-1;
+    font-family: "Lato", sans-serif;   
+    
+        &__logo{
+            width: 30rem;
+            height: auto;
+            &-box{
+                margin: o auto;
+                text-align: center;
+            }
+        }
+        &__navigation{
+            border-top: 2px solid $color-grey-3;
+            padding-top: 2rem;
+            display: inline-block;
+
+        }
+        &__list{
+            list-style: none;
+            line-height: 2.5rem;
+            
+        }
+        &__item{
+            display: inline;
+            
+            &:not(:last-child){
+                margin-right: 1.5rem;
+            }
+        }
+        &__link{
+            &:link, &:visited{
+                color: $color-grey-1;
+                text-decoration: none;
+                text-transform: uppercase;
+                display: inline-block;
+                transition: all 0.3s;
+            }
+            &:hover{
+                background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 0));
+                -webkit-background-clip: text;
+                color: transparent;
+                
+                transform: rotate(2deg) scale(1.1);
+        }
+        }
+        &__copyright{
+            border-top: 2px solid $color-grey-3;
+            padding-top: 2rem;
+            width: 100%;
+            text-align: justify;
+            float: right;
+            line-height: 2.5rem;
+            font-weight: 100;
+            
+        }
+
+}

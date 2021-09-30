@@ -1,0 +1,184 @@
+.section__shop{
+    background-color: $color-grey-1;
+    padding: 25rem 0;
+    margin-top: -15rem;
+}
+.card {
+    perspective: 120rem;                                   //new property کش دادن به چرخ
+    height: 52rem;
+  position: relative;
+  &__side {
+    width: 100%;
+    height: 52rem;
+    // border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+    transition: all 1.5s;
+    &--front {
+      background-color: $color-white;
+    }
+    &--back {
+      transform: rotateY(180deg);
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-card-5,
+          $color-card-6
+        );
+      }
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-card-3,
+          $color-card-4
+        );
+      }
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-card-1,
+          $color-card-2
+        );
+      }
+    }
+    
+  }
+  
+  &:hover &__side--front{
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back{
+        transform: rotateY(0);
+    }
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;                                   //new property ادغام رنگ با تصویر
+    -webkit-background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    &-1 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-card-5,
+          $color-card-6
+        ),
+        url(../../img/shop1.jpg);
+    }
+    &-2 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-card-3,
+          $color-card-4
+        ),
+        url(../../img/shop3.jpg);
+    }
+    &-3 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-card-1,
+          $color-card-2
+        ),
+        url(../../img/sh.jpg);
+    }
+  }
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: $color-white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 12rem;
+    left: 2rem;
+    text-align: left;
+    width: 55%;
+
+    &--span {
+    
+      line-height: 1rem;
+    
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-card-5, 0.85),
+          rgba($color-card-6, 0.85)
+        );
+        word-spacing: 1rem;
+        padding: 0.4rem 1.5rem;
+        -webkit-box-decoration-break: clone;                             //new property اعمال پدینگ موثع شکستن کلمات
+    
+      }
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-card-3, 0.85),
+          rgba($color-card-4, 0.85)
+        );
+        padding: 0.4rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+      }
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-card-1, 0.85),
+          rgba($color-card-2, 0.85)
+        );
+        padding: 0.4rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+      }
+    }
+  }
+  &__detail{
+      padding: 0;
+      margin-top: 2rem;
+    ul{
+        text-decoration: none;
+        list-style-type: none;
+        width: 80%;
+        margin: 0 auto;
+        li{
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 1.9rem;
+            &:not(:last-child){
+                border-bottom: 1px solid $color-grey;
+            }
+
+        }
+    }  
+  }
+  &__cta{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__price-box{
+      color:$color-white;
+      text-align: center;
+      margin-bottom: 8rem;
+
+  }
+  &__p-1{
+      font-size: 4rem;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+  }
+  &__p-2{
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: 100;
+      
+  }
+  #btn-card {
+      font-size: 2rem;  
+      padding: 1.6rem 1.8rem;
+      
+      
+  }
+}

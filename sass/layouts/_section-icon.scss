@@ -1,0 +1,28 @@
+.section-icon{
+    background-image: linear-gradient(to right bottom, rgba($color-blue-light, 0.5), rgba($color-blue-dark, 0.5)), url(../../img/bb2.jpg);
+    background-size: cover;
+     padding: 20rem 0;
+     background-position: top;
+     transform: skewY(7deg);
+     margin-top: -25rem;
+     & > *{
+         transform: skewY(-7deg);
+     }
+     
+}
+.icon-box{
+    background-color: rgba($color-grey-1, 0.7);
+    
+    padding: 5rem 0rem;
+    transition: all 0.3S;
+    border-radius: 2px;
+    text-align: center;
+   
+    &:hover{
+        transform:  translateY(-1.3rem) scale(1.05);
+        
+        // outline-offset: 0.2rem;
+        background-color: rgba($color-grey-1, 0.85);
+    }
+
+}
