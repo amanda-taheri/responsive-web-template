@@ -6,7 +6,7 @@ Designed to be lightweight, mobile-friendly, and easy to customize.
 ---
 
 ## 📸 Preview
-![Quiz Screenshot](img/Home.jpg)
+![Home page Screenshot](img/Home.jpg)
 
 
 ---
